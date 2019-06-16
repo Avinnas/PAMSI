@@ -170,9 +170,9 @@ void Introsort(int * arr, int *begin, int *end)
 }
 
 array<array<array<double,8>,5>,3> make_stats(){
-    int number_of_arrays = 1;
+    int number_of_arrays = 100;
     array<array<array<double,8>,5>,3> sorting_stats;
-    int sizes[] = {1000, 5000, 10000, 50000, 10000};
+    int sizes[] = {10000, 50000, 100000, 500000, 1000000};
     int sizes_length = sizeof(sizes) / sizeof(sizes[0]);
     int percent_sorted[] = {0, 250, 500, 750, 950, 990, 997};
     int percent_sorted_length = sizeof(percent_sorted) / sizeof(percent_sorted[0]);
